@@ -1,0 +1,25 @@
+{
+  "name": "dorm-regis-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quocnam612/Dorm-Regis-BOT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quocnam612/Dorm-Regis-BOT/issues"
+  },
+  "homepage": "https://github.com/quocnam612/Dorm-Regis-BOT#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "puppeteer": "^24.12.0"
+  }
+}
