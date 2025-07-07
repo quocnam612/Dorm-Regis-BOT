@@ -1,0 +1,1 @@
+Trang chọn miễn giảm của KTX -> chọn 1. -> chọn trường / khu / giới tính / loại phòng / nhà -> chọn tầng 5 / phòng 512 -> chọn slot 4 -> continue (đ đc thì lm lại từ đầu) -> nếu được thì camp 20p -> repeat 🤯 crazy
