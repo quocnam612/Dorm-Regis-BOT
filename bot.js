@@ -5,14 +5,14 @@ const app = express();
 app.get("/", (req, res) => res.send("Bot is alive"));
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`✅ Uptime endpoint running at :${PORT}`);
+    console.log(`✅ Uptime endpoint running at :${PORT}`);
 });
 
 const browser = await puppeteer.launch({
-  headless: false,
-  defaultViewport: null,
-  args: ["--start-maximized"]
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
 });
+
 
 function waitForDialog(page, expectedMessage, timeout = 5000) {
     return new Promise((resolve) => {
