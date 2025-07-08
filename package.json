@@ -21,7 +21,8 @@
   "homepage": "https://github.com/quocnam612/Dorm-Regis-BOT#readme",
   "description": "",
   "dependencies": {
+    "chromium": "^3.0.0",
     "express": "^5.1.0",
-    "puppeteer": "^24.12.0"
+    "puppeteer-core": "^24.12.0"
   }
 }
