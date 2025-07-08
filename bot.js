@@ -1,5 +1,12 @@
-import { time } from "console";
 import puppeteer from "puppeteer";
+import express from "express";
+
+const app = express();
+app.get("/", (req, res) => res.send("Bot is alive"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`✅ Uptime endpoint running at :${PORT}`);
+});
 
 const browser = await puppeteer.launch({
   headless: false,
