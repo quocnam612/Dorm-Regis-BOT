@@ -113,7 +113,8 @@ async function runBotLoot() {
 
                 if (reachedRegistryPanel) {
                     console.log("✅ Registry panel reached");
-                    break;
+                    await new Promise(res => setTimeout(res, 20 * 60000));
+                    continue;
                 } 
                 else console.log("❌ Failed to reach registry panel. Retrying...");
             }
