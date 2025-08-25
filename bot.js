@@ -11,7 +11,7 @@ app.listen(PORT, () => {
 
 const browser = await puppeteer.launch({
     executablePath: chromium.path,
-    headless: true,
+    headless: false,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
 });
 
@@ -55,6 +55,9 @@ async function runBotLoot() {
             await page.click("button.custom-button.priority_1");
             console.log("Page forwarded");
             
+            await page.waitForSelector("#proceedButton", { visible: true });
+            await page.click("#proceedButton");
+
             await page.waitForNavigation({ waitUntil: "networkidle2" });
             await page.select("#UniversityId", "94");
 
