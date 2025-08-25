@@ -11,7 +11,7 @@ app.listen(PORT, () => {
 
 const browser = await puppeteer.launch({
     executablePath: chromium.path,
-    headless: false,
+    headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
 });
 
