@@ -52,7 +52,6 @@ async function runBotLoot() {
 
         try {
             await page.goto("https://sv.ktxhcm.edu.vn/Register/ChoosePriority", { waitUntil: "networkidle2" });
-            await page.click("button.custom-button.priority_1");
             console.log("Page forwarded");
             
             await page.waitForSelector("#proceedButton", { visible: true });
