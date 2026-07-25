@@ -4,7 +4,7 @@ import express from "express";
 const app = express();
 app.get("/", (req, res) => res.send("Bot is alive"));
 const PORT = process.env.PORT || 3000;
-const HEADLESS = process.env.HEADLESS !== "false";
+const HEADLESS = process.env.HEADLESS !== "true";
 const VIEWPORT_WIDTH = Number(process.env.VIEWPORT_WIDTH || 1200);
 const VIEWPORT_HEIGHT = Number(process.env.VIEWPORT_HEIGHT || 1200);
 const USER_DATA_DIR = process.env.USER_DATA_DIR || "./chrome-profile";
